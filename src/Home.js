@@ -11,7 +11,11 @@ const Home = () => {
             <img src="/assets/images/Hamburger.png" alt="Hamburger Icon" />
           </div>
         </div>
-        <img src="/assets/images/HeaderImg.png" alt="Header-Banner" className="hd"/>
+        <img
+          src="/assets/images/HeaderImg.png"
+          alt="Header-Banner"
+          className="hd"
+        />
         <div className="header-text">
           <h3>WELCOME</h3>
           <h2>Lorem ipsum dolor sit amet consectetur </h2>
@@ -25,9 +29,9 @@ const Home = () => {
       </header>
       <div className="partner">
         <div className="partner-txt">
-        <h3>PARTNERS</h3>
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <h3>PARTNERS</h3>
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div className="part-img">
           <img src="/assets/images/Google.svg" alt="Google Logo" />
@@ -64,9 +68,9 @@ const Home = () => {
       </div>
       <div className="team">
         <div className="team-txt">
-        <h2>TEAM</h2>
-        <h2>Our Talents</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <h2>TEAM</h2>
+          <h3>Our Talents</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div className="cards">
           <div className="card">

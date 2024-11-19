@@ -64,6 +64,194 @@ header .hd{
     font-size: 20px;
     padding: 13px 45px;
     border: none;
+    border-radius: 5px;
     background-color: white;
     margin-bottom: 40px;
+}
+.partner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.partner-txt h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 10px;
+    color: #74C69D;
+}
+.partner-txt h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.partner-txt p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 55px;
+}
+.partner .part-img{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 55px;
+}
+.partner button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white; 
+    background: black;
+    padding: 13px 30px;  
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 50px;
+}
+.chat{
+    padding: 20px;
+}
+.chat img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.chat h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.chat p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.chat button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 13px 45px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+.study{
+    padding: 20px;
+}
+.study img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.study h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.study p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.study button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 13px 45px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.team .team-txt h2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 10px;
+    color: #74C69D;
+}
+.team .team-txt h3{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.team .team-txt p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 55px;
+}
+.cards{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 44px;
+}
+.cards .card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.cards .card img{
+    padding: 20px;
+}
+.cards .card h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.cards .card p{
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 400;
+}
+.team button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 13px 45px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+footer{
+    background: #74C69D;
+    color: white;
+    padding: 20px 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+footer .logos{
+    display: flex;
+    gap: 20px;
+}
+footer p{
+    margin: 0;
+    font-family: Work Sans;
+    font-size: 19px;
+    font-weight: 400;
 }
