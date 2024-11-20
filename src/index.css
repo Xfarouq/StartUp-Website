@@ -13,8 +13,11 @@ header{
     background-color: #74C69D;
     padding: 0 20px;
 }
-.navbar{
-    padding: 20px 0;
+.Nav{
+    background-color: #74C69D;
+}
+.Nav .navbar{
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +36,24 @@ header{
 }
 .navbar .logo img{
     width: 30%;
+}
+.navbar.desktop{
+    display: none;
+}
+.navbar.desktop .links{
+    display: flex;
+    gap: 30px;
+}
+.navbar.desktop li{
+    list-style: none;
+}
+.navbar.desktop a{
+    text-decoration: none;
+    color: white;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
 }
 header .hd{
     width: 100%;
@@ -96,6 +117,8 @@ header .hd{
 .partner .part-img{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
     margin-bottom: 55px;
 }
@@ -196,15 +219,17 @@ header .hd{
     margin-bottom: 55px;
 }
 .cards{
-    width: 80%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 44px;
 }
 .cards .card{
     background-color: white;
     display: flex;
+    width: 70%;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     padding: 0 30px;
@@ -254,4 +279,286 @@ footer p{
     font-family: Work Sans;
     font-size: 19px;
     font-weight: 400;
+}
+/* small tablet styles */
+@media screen and (min-width: 620px){
+    .header-text h3{
+        font-size: 22px;
+    }
+    .header-text h2{
+        font-size: 32px;
+    }
+    .header-text p{
+        font-size: 18px;
+    }
+    .header-text .header-button{
+        font-size: 22px;
+    }
+    .partner-txt h3{
+        font-size: 18px;
+    }
+    .partner-txt h2{
+        font-size: 28px;
+    }
+    .partner-txt p{
+        font-size: 28px;
+    }
+    .partner button{
+        font-size: 22px;
+    }
+    .chat h2{
+        font-size: 28px;
+    }
+    .chat p{
+        font-size: 18px;
+    }
+    .chat button{
+        font-size: 22px;
+    }
+    .study h2{
+        font-size: 28px;
+    }
+    .study p{
+        font-size: 18px;
+    }
+    .study button{
+        font-size: 22px;
+    }
+    .team .team-txt h2{
+        font-size: 20px;
+    }
+    .team .team-txt h3{
+        font-size: 30px;
+    }
+    .team .team-txt p{
+        font-size: 28px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .cards .card{
+        width: 60%;
+    }
+    .cards .card h2{
+        font-size: 28px;
+    }
+    .cards .card p{
+        font-size: 18px;
+    }
+    .team button{
+        font-size: 22px;
+    }
+    footer p{
+        font-size: 22px;
+    }
+}
+
+/* Large tablets & Laptop styles */
+@media screen and (min-width: 960px){
+    .header-text h3{
+         font-size: 24px;
+    }
+    .header-text h2{
+        font-size: 34px;
+    }
+    .header-text p{
+        font-size: 20px;
+    }
+    .header-text .header-button{
+        font-size: 24px;
+    }
+    .partner .part-img{
+        gap: 40px;
+    }
+    .partner-txt h3{
+        font-size: 20px;
+    }
+    .partner-txt h2{
+        font-size: 30px;
+    }
+    .partner-txt p{
+        font-size: 30px;
+    }
+    .partner button{
+        font-size: 30px;
+    }
+    .chat h2{
+        font-size: 30px;
+    }
+    .chat p{
+        font-size: 20px;
+    }
+    .chat button{
+        font-size: 24px;
+    }
+    .study h2{
+        font-size: 30px;
+    }
+    .study p{
+        font-size: 20px;
+    }
+    .study button{
+        font-size: 24px;
+    }
+    .team .team-txt h2{
+        font-size: 22px;
+    }
+    .team .team-txt h3{
+        font-size: 32px;
+    }
+    .team .team-txt p{
+        font-size: 30px;
+    }
+    .cards .card{
+        width: 30%;
+    }
+    .cards .card h2{
+        font-size: 30px;
+    }
+    .cards .card p{
+        font-size: 20px;
+    }
+    .team button{
+        font-size: 24px;
+    }
+    footer p{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .navbar.mobile{
+        display: none;
+    }
+    .navbar.desktop{
+        display: flex;
+        padding-bottom: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    header{
+        padding: 0 80px;
+        margin-bottom: 60px;
+    }
+    .hd-img{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    .hd-img img{
+        width: 50%;
+        align-self: flex-start;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    .header-text{
+        width: 50%;
+    }
+    .header-text h3{
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .header-text h2{
+        font-size: 33px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .header-text p{
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .header-text .header-button{
+        font-size: 20px;
+    }
+    .partner{
+        padding: 0 80px;
+        margin-bottom: 25px;
+    }
+    .partner .part-img{
+        flex-direction: row;
+    }
+    .partner .part-img img{
+        width: 18%;
+    }
+    .partner-txt h3{
+        font-size: 18px;
+    }
+    .partner-txt h2{
+        font-size: 24px;
+    }
+    .partner-txt p{
+        font-size: 25px;
+    }
+    .partner button{
+        font-size: 20px;
+    }
+    .chat{
+        padding: 0 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 70px;
+    }
+    .chat img{
+        width: 55%;
+    }
+    .chat-text h2{
+        font-size: 33px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .chat-text p{
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .chat-text button{
+        font-size: 20px;
+    }
+    .study{
+        padding: 0 80px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 70px;
+    }
+    .study img{
+        width: 55%;
+    }
+    .study-text h2{
+        font-size: 33px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .study-text p{
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .study-text button{
+        font-size: 20px;
+    }
+    .team{
+        padding: 0 80px;
+    }
+    footer{
+        padding: 50px 80px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer p{
+        font-size: 19px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .cards{
+        flex-wrap: nowrap;
+    }
 }

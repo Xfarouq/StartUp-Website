@@ -2,29 +2,22 @@ const Home = () => {
   return (
     <div className="head">
       <header>
-        <div className="navbar">
-          <div className="logo">
-            <img src="/assets/images/Logo.svg" alt="LOGO" />
-            <h3>Start</h3>
+        <div className="hd-img">
+          <img
+            src="/assets/images/HeaderImg.png"
+            alt="Header-Banner"
+            className="hd"
+          />
+          <div className="header-text">
+            <h3>WELCOME</h3>
+            <h2>Lorem ipsum dolor sit amet consectetur </h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+              nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
+              voluptate culpa nesciunt delectus iste?
+            </p>
+            <button className="header-button">Explore</button>
           </div>
-          <div className="ham">
-            <img src="/assets/images/Hamburger.png" alt="Hamburger Icon" />
-          </div>
-        </div>
-        <img
-          src="/assets/images/HeaderImg.png"
-          alt="Header-Banner"
-          className="hd"
-        />
-        <div className="header-text">
-          <h3>WELCOME</h3>
-          <h2>Lorem ipsum dolor sit amet consectetur </h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-            nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
-            voluptate culpa nesciunt delectus iste?
-          </p>
-          <button className="header-button">Explore</button>
         </div>
       </header>
       <div className="partner">
@@ -96,18 +89,6 @@ const Home = () => {
         </div>
         <button className="team-btn">Learn More</button>
       </div>
-      <footer>
-        <div className="logos">
-          <img src="/assets/images/f.svg" alt="Facebook Logo" />
-          <img src="/assets/images/IG.svg" alt="Instagram Logo" />
-          <img src="/assets/images/TW.svg" alt="Twitter Logo" />
-          <img src="/assets/images/P.svg" alt="Pinterest Logo" />
-          <img src="/assets/images/tiktok.svg" alt="Tiktok Logo" />
-          <img src="/assets/images/whatsapp.svg" alt="Whatsapp Logo" />
-          <img src="/assets/images/YT.svg" alt="Youtube Logo" />
-        </div>
-        <p>© Start, 2022. All rights reserved.</p>
-      </footer>
     </div>
   );
 };
