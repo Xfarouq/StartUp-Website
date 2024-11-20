@@ -1,13 +1,617 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*,
+**,
+***{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #74C69D;
+    padding: 0 20px;
+}
+.Nav{
+    background-color: #74C69D;
+}
+.Nav .navbar{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.navbar h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+    margin: 0;
+}
+.navbar .logo img{
+    width: 30%;
+}
+.navbar.desktop{
+    display: none;
+}
+.navbar.desktop .links{
+    display: flex;
+    gap: 30px;
+}
+.navbar.desktop li{
+    list-style: none;
+}
+.navbar.desktop a{
+    text-decoration: none;
+    color: white;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+header .hd{
+    width: 100%;
+    padding: 12px 0;
+}
+.header-text h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+.header-text h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+.header-text p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 25px;
+}
+.header-text .header-button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 13px 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.partner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.partner-txt h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 10px;
+    color: #74C69D;
+}
+.partner-txt h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.partner-txt p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 55px;
+}
+.partner .part-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 55px;
+}
+.partner button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white; 
+    background: black;
+    padding: 13px 30px;  
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 50px;
+}
+.chat{
+    padding: 20px;
+}
+.chat img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.chat h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.chat p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.chat button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 13px 45px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+.study{
+    padding: 20px;
+}
+.study img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.study h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.study p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.study button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 13px 45px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.team .team-txt h2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 10px;
+    color: #74C69D;
+}
+.team .team-txt h3{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.team .team-txt p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 55px;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 44px;
+}
+.cards .card{
+    background-color: white;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.cards .card img{
+    padding: 20px;
+}
+.cards .card h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.cards .card p{
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 400;
+}
+.team button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 13px 45px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+footer{
+    background: #74C69D;
+    color: white;
+    padding: 20px 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+footer .logos{
+    display: flex;
+    gap: 20px;
+}
+footer p{
+    margin: 0;
+    font-family: Work Sans;
+    font-size: 19px;
+    font-weight: 400;
+}
+.work{
+    padding: 0 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.work .work-txt{
+    text-align: center;
+}
+.work .work-txt h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 10px;
+    color: #74C69D;
+}
+.work .work-txt h2{
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.work .work-txt p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 55px;
+}
+.work .port{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 30px;
+}
+.work button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 13px 45px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+}
+/* small tablet styles */
+@media screen and (min-width: 620px){
+    .header-text h3{
+        font-size: 22px;
+    }
+    .header-text h2{
+        font-size: 32px;
+    }
+    .header-text p{
+        font-size: 18px;
+    }
+    .header-text .header-button{
+        font-size: 22px;
+    }
+    .partner-txt h3{
+        font-size: 18px;
+    }
+    .partner-txt h2{
+        font-size: 28px;
+    }
+    .partner-txt p{
+        font-size: 28px;
+    }
+    .partner button{
+        font-size: 22px;
+    }
+    .chat h2{
+        font-size: 28px;
+    }
+    .chat p{
+        font-size: 18px;
+    }
+    .chat button{
+        font-size: 22px;
+    }
+    .study h2{
+        font-size: 28px;
+    }
+    .study p{
+        font-size: 18px;
+    }
+    .study button{
+        font-size: 22px;
+    }
+    .team .team-txt h2{
+        font-size: 20px;
+    }
+    .team .team-txt h3{
+        font-size: 30px;
+    }
+    .team .team-txt p{
+        font-size: 28px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .cards .card{
+        width: 60%;
+    }
+    .cards .card h2{
+        font-size: 28px;
+    }
+    .cards .card p{
+        font-size: 18px;
+    }
+    .team button{
+        font-size: 22px;
+    }
+    footer p{
+        font-size: 22px;
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Large tablets & Laptop styles */
+@media screen and (min-width: 960px){
+    .header-text h3{
+         font-size: 24px;
+    }
+    .header-text h2{
+        font-size: 34px;
+    }
+    .header-text p{
+        font-size: 20px;
+    }
+    .header-text .header-button{
+        font-size: 24px;
+    }
+    .partner .part-img{
+        gap: 40px;
+    }
+    .partner-txt h3{
+        font-size: 20px;
+    }
+    .partner-txt h2{
+        font-size: 30px;
+    }
+    .partner-txt p{
+        font-size: 30px;
+    }
+    .partner button{
+        font-size: 30px;
+    }
+    .chat h2{
+        font-size: 30px;
+    }
+    .chat p{
+        font-size: 20px;
+    }
+    .chat button{
+        font-size: 24px;
+    }
+    .study h2{
+        font-size: 30px;
+    }
+    .study p{
+        font-size: 20px;
+    }
+    .study button{
+        font-size: 24px;
+    }
+    .team .team-txt h2{
+        font-size: 22px;
+    }
+    .team .team-txt h3{
+        font-size: 32px;
+    }
+    .team .team-txt p{
+        font-size: 30px;
+    }
+    .cards .card{
+        width: 30%;
+    }
+    .cards .card h2{
+        font-size: 30px;
+    }
+    .cards .card p{
+        font-size: 20px;
+    }
+    .team button{
+        font-size: 24px;
+    }
+    footer p{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .navbar.mobile{
+        display: none;
+    }
+    .navbar.desktop{
+        display: flex;
+        padding-bottom: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    header{
+        padding: 0 80px;
+        margin-bottom: 60px;
+    }
+    .hd-img{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    .hd-img img{
+        width: 50%;
+        align-self: flex-start;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    .header-text{
+        width: 50%;
+    }
+    .header-text h3{
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .header-text h2{
+        font-size: 33px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .header-text p{
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .header-text .header-button{
+        font-size: 20px;
+    }
+    .partner{
+        padding: 0 80px;
+        margin-bottom: 25px;
+    }
+    .partner .part-img{
+        flex-direction: row;
+    }
+    .partner .part-img img{
+        width: 18%;
+    }
+    .partner-txt h3{
+        font-size: 18px;
+    }
+    .partner-txt h2{
+        font-size: 24px;
+    }
+    .partner-txt p{
+        font-size: 25px;
+    }
+    .partner button{
+        font-size: 20px;
+    }
+    .chat{
+        padding: 0 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 70px;
+    }
+    .chat img{
+        width: 55%;
+    }
+    .chat-text h2{
+        font-size: 33px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .chat-text p{
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .chat-text button{
+        font-size: 20px;
+    }
+    .study{
+        padding: 0 80px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 70px;
+    }
+    .study img{
+        width: 55%;
+    }
+    .study-text h2{
+        font-size: 33px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .study-text p{
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .study-text button{
+        font-size: 20px;
+    }
+    .team{
+        padding: 0 80px;
+    }
+    footer{
+        padding: 50px 80px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer p{
+        font-size: 19px;
+    }
+    .work .work-txt p{
+        font-size: 20px;
+    }
+    .work .port img{
+        width: 45%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .cards{
+        flex-wrap: nowrap;
+    }
 }
